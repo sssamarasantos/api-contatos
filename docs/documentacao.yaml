@@ -120,6 +120,8 @@ components:
     Pessoa:
       type: object
       properties:
+        id:
+          type: integer
         nome:
           type: string
           description: Nome da pessoa
@@ -134,6 +136,9 @@ components:
           items:
             type: string
             description: Tags
+      required:
+        - nome
+        - email
     Organizacao:
       title: Organizacao
       type: object
