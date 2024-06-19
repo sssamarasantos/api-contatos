@@ -75,6 +75,12 @@ paths:
           name: id
           schema:
             type: integer
+      requestBody:
+        description: "Pessoa a ser alterada"
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Pessoa"
       responses:
         200:
           description: Operação bem sucedida

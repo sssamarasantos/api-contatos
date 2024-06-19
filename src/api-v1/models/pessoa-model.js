@@ -25,12 +25,12 @@ function inserir(obj, callback) {
     db.pessoaDb.insert(obj, callback);
 }
 
-function alterar() {
-
+function alterar(id, obj, callback) {
+    db.pessoaDb.update({ _id: id }, { $set: obj }, {}, callback);
 }
 
-function excluir() {
-
+function excluir(id, callback) {
+    db.pessoaDb.remove({ _id: id }, {}, callback);
 }
 
 export default {
