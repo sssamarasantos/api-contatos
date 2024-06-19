@@ -1,6 +1,6 @@
 import db from "../utils/db";
 
-function listar(params, callback) {
+function listar(filtro, callback) {
     //     const objFake = [
     //         {
     //         "id": 1,
@@ -21,12 +21,16 @@ function listar(params, callback) {
     db.pessoaDb.find({}, callback)
 }
 
-function inserir(obj, callback) {
-    db.pessoaDb.insert(obj, callback);
+function buscar(id, callback) {
+    db.pessoaDb.find({ _id: id }, callback);
 }
 
-function alterar(id, obj, callback) {
-    db.pessoaDb.update({ _id: id }, { $set: obj }, {}, callback);
+function inserir(pessoa, callback) {
+    db.pessoaDb.insert(pessoa, callback);
+}
+
+function alterar(id, pessoa, callback) {
+    db.pessoaDb.update({ _id: id }, { $set: pessoa }, {}, callback);
 }
 
 function excluir(id, callback) {
@@ -35,6 +39,7 @@ function excluir(id, callback) {
 
 export default {
     listar,
+    buscar,
     inserir,
     alterar,
     excluir
