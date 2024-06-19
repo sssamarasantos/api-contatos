@@ -1,0 +1,95 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "API Contatos",
+    "collectionId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+    "dateExported": "2024-06-19T22:55:38.101Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "52f9fd3c-ae9d-42e7-a10a-a65903c276f5",
+            "colId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+            "containerId": "",
+            "name": "/v1/pessoas",
+            "url": "http://localhost:5500/api/v1/pessoas",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-17T22:45:10.391Z",
+            "modified": "2024-06-17T22:45:10.391Z",
+            "headers": []
+        },
+        {
+            "_id": "6484c23f-e379-4f7a-9202-58ccdaa29a2a",
+            "colId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+            "containerId": "",
+            "name": "/v1/pessoas/:id",
+            "url": "http://localhost:5500/api/v1/pessoas/{id}",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-06-19T22:23:56.016Z",
+            "modified": "2024-06-19T22:27:30.204Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "AGwm6BFDTwXltiW",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "cb6639d1-721b-49f1-bef2-1b9718a33ef6",
+            "colId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+            "containerId": "",
+            "name": "/v1/pessoas",
+            "url": "http://localhost:5500/api/v1/pessoas",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-17T22:45:26.680Z",
+            "modified": "2024-06-19T22:41:35.781Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Teste\",\n  \"email\":\"teste@teste.com\",\n  \"telefone\": \"11 978788787\",\n  \"organizacao\": null,\n  \"tags\": [\n    \"cinema\",\n    \"trabalho\"\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b4f05233-e257-4b3c-bc35-2d2056d6a96e",
+            "colId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+            "containerId": "",
+            "name": "/v1/pessoas/:id",
+            "url": "http://localhost:5500/api/v1/pessoas/{id}",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2024-06-19T22:22:07.404Z",
+            "modified": "2024-06-19T22:31:39.022Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "VJ84KCX8z52k4Ezz",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Teste 2 PUT\",\n  \"email\": \"email@teste.com\",\n  \"telefone\": \"11 978788787\",\n  \"organizacao\": null,\n  \"tags\": [\n    \"cinema\",\n    \"trabalho\"\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a4e73110-acc2-4143-af25-59239175378e",
+            "colId": "aa028ae1-5fca-49ea-b9ae-cac55ac2837e",
+            "containerId": "",
+            "name": "/v1/pessoas/:id",
+            "url": "http://localhost:5500/api/v1/pessoas/wcBp8qSRACPnyn3p",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-06-19T22:22:00.076Z",
+            "modified": "2024-06-19T22:22:00.076Z",
+            "headers": []
+        }
+    ],
+    "ref": "lu2sGecs9rCZah4d9EbTgDbXNSEvyxecXvhYXL8vM6SqDbMKWSJdACbOSm1ItcDoIriGHbMKBo3iFKyKiz8_6Q"
+}
